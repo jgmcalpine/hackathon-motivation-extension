@@ -1,15 +1,19 @@
 {
-  "name": "Trung and Jon",
+  "name": "Latest attemp",
   "description": "Click when you're feeling bad",
   "version": "1.2",
-  "background": { "scripts": ["background.js"] },
+  // "background": { "scripts": ["background.js"] },
   "content_scripts": [
     {
-      "matches": ["https://www.google.com/"]
+      "matches": ["<all_urls>"],
+      "js": ["background.js"],
+      "html": ["index.html"]
     }
+
   ],
   "browser_action": {
-      "name": "Click for some motivation"
+      "name": "Click for some feel good",
+      "default_popup": "index.html"
   },
   "manifest_version": 2
 }
